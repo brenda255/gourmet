@@ -1,48 +1,82 @@
-<div class="field">
-  <label class="label">Name</label>
-  <div class="control">
-    <input id='recipe_title' class="input" type="text" placeholder="Text input">
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Photo</label>
-  <div class="control">
-    <input class="input" type="text" placeholder="Paste URL">
-  </div>
-</div>
-
-<div class="file">
-  <label class="file-label">
-    <input class="file-input" type="file" name="resume">
-    <span class="file-cta">
-      <span class="file-icon">
-        <i class="fas fa-upload"></i>
-      </span>
-      <span class="file-label">
-        Choose a file…
-      </span>
-    </span>
-  </label>
-</div>
-
-<div class="field">
-  <label class="label">Ingredients</label>
-  <p>Type each individual ingredient and seperate them by pressing enter.</p>
-  <div class="control">
-    <textarea id='ingredients' class="textarea" placeholder="Text here"></textarea>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Instructions</label>
-  <p>Type each step for instructions and seperate them by pressing enter.</p>
-  <div class="control">
-    <textarea id='instructions' class="textarea" placeholder="Text here"></textarea>
-  </div>
-</div>
-<div>
-  <button class="button">Submit Recipe</button>
-</div>
-
-<script src="/js/recipeInput.js"></script>
+    <header>
+        <nav class="navbar has-background-light level" role="navigation" aria-label="main navigation">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <a href="/homepage" class="navbar-item level-item">Home</a>
+                    <a href="/myRecipes" class="navbar-item">My Recipes</a>
+                </div>
+            </div>
+            <div class="navbar-item">
+                <h2 class="title">Welcome to Gourmet!</h2>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-link" href="/signUp">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="/login">
+                            <strong>Log in</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    </header>
+<section class="section"></section>
+    <div class="column is-half is is-offset-one-quarter">
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Create your own recipe
+                </p>
+            </header>
+            <div class="card-content is-vcentered">
+                <div class="field">
+                    <label class="label">Name</label>
+                        <div class="control">
+                            <input id='recipe_title' class="input" type="text" placeholder="Text input">
+                        </div>
+                </div>
+                <div class="field">
+                    <label class="label">Photo</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Paste URL">
+                        </div>
+                </div>
+                <div class="file">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                            <span class="file-icon">
+                            <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label is-info">
+                                Choose a file…
+                            </span>
+                            </span>
+                    </label>
+                </div>
+                <div class="field">
+                    <label class="label">Ingredients</label>
+                        <p>Type each individual ingredient and seperate them by pressing enter.</p>
+                            <div class="control">
+                                <textarea id='ingredients' class="textarea" placeholder="Text here"></textarea>
+                            </div>
+                </div>
+                <div class="field">
+                    <label class="label">Instructions</label>
+                        <p>Type each step for instructions and seperate them by pressing enter.</p>
+                    <div class="control">
+                        <textarea id='instructions' class="textarea" placeholder="Text here"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button class="button is-info">Submit Recipe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section is-large"></section>
+      
+      <script src="/js/recipeInput.js"></script>

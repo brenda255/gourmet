@@ -1,22 +1,53 @@
-<p>Login</p>
-<div>
-  <div>
-    <h2>Login</h2>
-    <form class="login-form">
-      <div>
-        <label for="username-login">Username:</label>
-        <input type="text" id="username_login" />
-      </div>
-      <div>
-        <label for="password-login">Password:</label>
-        <input type="password" id="password_login" />
-      </div>
-      <div>
-        <button type='submit' id="submit_login">login</button>
-      </div>
-    </form>
-  </div>
-  or <a href="/signUp">sign up</a> instead
-</div>
+<header>
+        <nav class="navbar has-background-light level" role="navigation" aria-label="main navigation">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <a href="/homepage" class="navbar-item level-item">Home</a>
+                    <a href="/myRecipes" class="navbar-item">My Recipes</a>
+                </div>
+            </div>
+            <div class="navbar-item">
+                <h2 class="title">Welcome to Gourmet!</h2>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-link" href="/signUp">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="/login">
+                            <strong>Log in</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    </header>
+    <section class="section is-medium"></section>
+    <div class="column is-half is-offset-one-quarter m-auto">
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Log in
+                </p>
+            </header>
+            <div class="card-content">
+                <form class="signup-form">
+                    <div class="content is-vcentered">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" />
+                    </div>
+                    <div class="content">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <div>
+                        <button class="button is-info" type='submit' id="submit_login">login</button><p>or <a href="/signup">sign up</a> instead</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="section is-large"></section>
 
-<script src="/js/login.js"></script>
+    <script src="/js/login.js"></script>
